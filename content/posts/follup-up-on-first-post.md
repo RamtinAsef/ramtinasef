@@ -4,24 +4,6 @@ date = 2024-02-03T20:05:49+01:00
 
 +++
 
-So yesterday I created my static website, set up ci/cd (and more) and uploaded my first post with the title *My First Post* and all in all it took me 30 minutes following a 10-minute youtube tutorial on how to setup my own static site using:
-
-* Github
-    * Repository
-    * GitHub Pages
-* Hugo
-* Git
-
-There are a ton of tutorials on youtube. The one I followed was the one from *JustAGuy Linux* called *Building a custom site with Hugo on GitHub*.
-
-Link: [linked text](https://www.youtube.com/watch?v=s1O-8zhPQmU "Building a custom site with Hugo on GitHub").
-
-I haven't dived into Hugo *yet* but I'll definitely do that. Main reason is to learn more about static sites, the process, what happens behind the curtains, maybe create my own template in the future.
-
-I'll also later on give a deep dive into why I chose this approach instead of maybe bulding a dynamic site from scratch.
-
-But main point here is, that this took me 30 minutes, following a only 10 minute youtube video. So if your excuse is *time*, then I guess it isn't valid anymore.
-
 So yesterday, I uploaded my first post with the title 'My First Post.' All in all, it took me 30 minutes, following a 10-minute YouTube tutorial on how to set up my own static site using:
 
 * Github
