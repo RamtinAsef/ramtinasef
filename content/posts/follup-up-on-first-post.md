@@ -1,10 +1,10 @@
 +++
-title = 'Folluw Up on First Post'
+title = 'Follow Up on First Post'
 date = 2024-02-03T20:05:49+01:00
 
 +++
 
-So yesterday I uploaded my first post with the title *My First Post* and all in all it took me 30 minutes following a 10-minute youtube tutorial on how to setup my own static site using:
+So yesterday I created my static website, set up ci/cd (and more) and uploaded my first post with the title *My First Post* and all in all it took me 30 minutes following a 10-minute youtube tutorial on how to setup my own static site using:
 
 * Github
     * Repository
