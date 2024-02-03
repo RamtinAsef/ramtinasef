@@ -20,7 +20,7 @@ disqusShortname = "ink-demo"
 	avatar = "https://image.freepik.com/free-vector/young-man-head-with-beard-avatar-character_24877-36786.jpg"
 
 	# Content types to disable Disqus on.
-	disableDisqusTypes = ["page"]
+	disableDisqusTypes = ["page", "post"]
 	
 	featherIconsCDN = true
 
@@ -51,14 +51,26 @@ url = "/tags"
 weight = 4
 
 [[params.social]]
-name = "Github"
-icon = "github"
-url = "https://github.com/knadh/hugo-ink"
+name = "LinkedIn"
+icon = "linkedin"
+url = "www.linkedin.com/in/ramtinasef"
 
-[[params.social]]
-name = "RSS"
-icon = "rss"
-url = "/index.xml"
+# Commented out for now
+# [[params.social]]
+# name = "YouTube"
+# icon = "youtube"
+# url = "https://www.youtube.com/@rasef"
+
+# Commented out for now
+# [[params.social]]
+# name = "Github"
+# icon = "github"
+# url = "https://github.com/RamtinAsef"
+
+# [[params.social]]
+# name = "RSS"
+# icon = "rss"
+# url = "/index.xml"
 
 [taxonomies]
    tag = "tags"
