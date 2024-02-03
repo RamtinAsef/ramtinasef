@@ -1,5 +1,5 @@
 +++
-title = 'Follup Up on First Post'
+title = 'Folluw Up on First Post'
 date = 2024-02-03T20:05:49+01:00
 
 +++
