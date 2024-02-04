@@ -53,7 +53,7 @@ weight = 4
 [[params.social]]
 name = "LinkedIn"
 icon = "linkedin"
-url = "www.linkedin.com/in/ramtinasef"
+url = "https://www.linkedin.com/in/ramtinasef"
 
 # Commented out for now
 # [[params.social]]

@@ -8,10 +8,10 @@ Link: [Do they server the gift of your keystrokes?](https://www.hanselman.com/bl
 
 If you're curious about these principles, I encourage you to visit his site and check him out. They, along with others, serve as motivators for this page.
 
-It's not a tech-page, nor a personal development page. It's nothing, but for me it was a thought and I ended up taking action - that's the first motivation.
+This is not a tech-page, nor a personal development page. It's nothing, but for me it was a thought and I ended up taking action - that's the first motivation.
 
 I currently can think of so many positive effect of doing this, that it motivates me to continue. Whenever I reach the moment, where I can't, I'll consider pulling the brake, do a pitstop, and maybe jump back in and continue the ride.
 
-By creating this website and sharing my portfolio, I hope to encourage others to be curious, share their experiences, continuously develop, and explore.
+By creating this website and sharing the journey, I hope to encourage others to be curious, share their experiences, continuously develop, and explore.
 
 Nevertheless, thank you for stopping by.
