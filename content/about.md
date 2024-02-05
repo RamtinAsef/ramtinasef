@@ -4,7 +4,7 @@ Greatly inspired by Scott Hanselman, I appreciate the ideology of "owning things
 
 Another valuable ideology Scott emphasizes is considering the number of keystrokes you have left and using them wisely.
 
-Link: [Do they server the gift of your keystrokes?](https://www.hanselman.com/blog/do-they-deserve-the-gift-of-your-keystrokes "Do they deserve the gift of your keystrokes?").
+Link: [Do they deserve the gift of your keystrokes?](https://www.hanselman.com/blog/do-they-deserve-the-gift-of-your-keystrokes "Do they deserve the gift of your keystrokes?").
 
 If you're curious about these principles, I encourage you to visit his site and check him out. They, along with others, serve as motivators for this page.
 
