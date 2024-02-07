@@ -4,7 +4,9 @@ date = 2024-02-03T20:05:49+01:00
 
 +++
 
-So yesterday, I uploaded my first post with the title 'My First Post.' All in all, it took me 30 minutes, following a 10-minute YouTube tutorial on how to set up my own static site using:
+So yesterday, I uploaded my first post with the title 'My First Post.' Not only that, I had my static site running, had a repository backing it up and a ci/cd setup up. 
+
+All in all, it took me only approximately 30 minutes, following a 10-minute YouTube tutorial on how to set up my own static site using:
 
 * Github
     * Repository
