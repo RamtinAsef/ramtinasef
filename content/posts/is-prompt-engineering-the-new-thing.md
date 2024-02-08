@@ -1,6 +1,6 @@
 +++
 title = 'Is Prompt Engineering the New Thing'
-date = 2024-02-06T13:00:18+01:00
+date = 2024-02-12T13:00:18+01:00
 draft = false
 +++
 
