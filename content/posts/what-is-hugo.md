@@ -1,6 +1,6 @@
 +++
 title = 'What Is Hugo'
-date = 2024-02-07T22:10:56+01:00
+date = 2024-02-08T22:10:56+01:00
 draft = false
 +++
 
