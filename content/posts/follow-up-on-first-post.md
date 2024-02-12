@@ -1,7 +1,7 @@
 +++
 title = 'Follow Up On First Post'
 date = 2024-02-06T20:05:49+01:00
-
+draft = false
 +++
 
 So recently, I uploaded my first post with the title 'My First Post.' Not only that, I had my static site running, had a repository backing it up and a ci/cd setup up. 

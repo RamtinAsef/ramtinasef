@@ -1,7 +1,7 @@
 +++
 title = 'Unit Testing: Is Coverage Metrics Bad'
 date = 2024-02-22T20:34:20+01:00
-draft = true
+draft = false
 +++
 
 I started reading 'Unit Testing' by Vladimir Khorikov and as I go through it, I would like to pick some of the topics he goes through and write them down. I believe this helps me understand the subject better.

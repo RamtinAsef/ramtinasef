@@ -9,6 +9,7 @@ Many of us in the tech industry have a deep-rooted passion for coding, problem-s
 At least that’s one of the things David Neal dives a bit into during his GREAT talk “Leadership Guide for the Reluctant Leader” at the DevTernity Conference in 2021. (A talk I would definitely recommend to watch).
 
 [Leadership Guide for the Reluctant Leader (David Neal)](https://www.youtube.com/watch?v=3PcL8UkorEg&t=524s/ "Leadership Guide for the Reluctant Leader (David Neal)")
+![](/images/screenshot-leadership-for-the-reluctant-manager.png)
 
 Taking cues from seasoned leaders and industry experts, it becomes evident that embracing leadership doesn't mean abandoning technical skills. Instead, it's akin to learning to ride a bike – a skill that, once acquired, remains with you, ready to be picked up again whenever needed. While the focus may shift towards honing managerial skills, the underlying technical acumen remains a valuable asset.
 
