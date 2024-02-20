@@ -44,4 +44,4 @@ That's 20 hours pr. month lost in productivity.
 
 I know it's theoretical, and there rightfully pops a lot of "but hey.." and "I don't.." sort of sayings, but nevertheless, try to focus on prioritize your _focus time_ and consider what you can do to keep the number of context switches as low as possible. There are a lot of good strategies, which you can implement on a personal level, but also on what can be done a team-level.
 
-By the way, I once got replied "nohello.com" after sending "hello" to someone at work. It was meant as a joke, but still with some learning behind it. I ended up visiting the site and since then I've never just sent a "Hi", "Hello" or something like that. Check it out: [nohello.com](https://nohello.com/ "nohello.com")
+By the way, I once got replied "nohello.com" after sending "hello" to someone at work. The reply was meant as a joke, but still with some learning behind it. I ended up visiting the site and since then I've never just sent a "Hi", "Hello" or something like that. Check it out: [nohello.com](https://nohello.com/ "nohello.com")
