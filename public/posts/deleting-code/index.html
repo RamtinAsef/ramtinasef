@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Deleting Code - Ramtin Asef</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	
+  <meta itemprop="name" content="Deleting Code">
+  <meta itemprop="description" content="I recently saw a YouTube video of Steven Hazels talk from the Nerd Nite Austin #160 where he talked about deleting code and shared strategies on how to approach it effectively.
+In his 18-minute talk he drops a few tactics on how to get it done.
+I’ll simplify it by dividing it into 3 topics.
+Letting Go of Commented Code If any commented code exists in the code, if often times is better to remove it.">
+  <meta itemprop="datePublished" content="2024-08-18T18:45:33+02:00">
+  <meta itemprop="dateModified" content="2024-08-18T18:45:33+02:00">
+  <meta itemprop="wordCount" content="404"><meta property="og:url" content="http://localhost:1313/posts/deleting-code/">
+  <meta property="og:site_name" content="Ramtin Asef">
+  <meta property="og:title" content="Deleting Code">
+  <meta property="og:description" content="I recently saw a YouTube video of Steven Hazels talk from the Nerd Nite Austin #160 where he talked about deleting code and shared strategies on how to approach it effectively.
+In his 18-minute talk he drops a few tactics on how to get it done.
+I’ll simplify it by dividing it into 3 topics.
+Letting Go of Commented Code If any commented code exists in the code, if often times is better to remove it.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-08-18T18:45:33+02:00">
+    <meta property="article:modified_time" content="2024-08-18T18:45:33+02:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Deleting Code">
+  <meta name="twitter:description" content="I recently saw a YouTube video of Steven Hazels talk from the Nerd Nite Austin #160 where he talked about deleting code and shared strategies on how to approach it effectively.
+In his 18-minute talk he drops a few tactics on how to get it done.
+I’ll simplify it by dividing it into 3 topics.
+Letting Go of Commented Code If any commented code exists in the code, if often times is better to remove it.">
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="http://localhost:1313/css/dark.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script src="http://localhost:1313/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+		<div class="avatar">
+			<a href="http://localhost:1313/">
+				<img src="https://image.freepik.com/free-vector/young-man-head-with-beard-avatar-character_24877-36786.jpg" alt="Ramtin Asef" />
+			</a>
+		</div>
+	
+	<h1 class="site-title"><a href="http://localhost:1313/">Ramtin Asef</a></h1>
+	<div class="site-description"><p>I am not an expert</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://www.linkedin.com/in/ramtinasef" title="LinkedIn"><i data-feather="linkedin"></i></a></li><li><a href="#" class="scheme-toggle" id="scheme-toggle"></a></li></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">18</span>
+							<span class="rest">Aug 2024</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">Deleting Code</h1>
+				</div>
+			</div>
+					
+			<div class="markdown">
+				<p>I recently saw <a href="https://www.youtube.com/watch?v=y376JcBl1t8&amp;list=PLeWAY-mDr91ho-PVkNT5PL53bc2c0AuwU&amp;index=60" title="Youtube reference">a YouTube video</a> of Steven Hazels talk from the Nerd Nite Austin #160 where he talked about deleting code and shared strategies on how to approach it effectively.</p>
+<p>In his 18-minute talk he drops a few tactics on how to get it done.</p>
+<p>I&rsquo;ll simplify it by dividing it into 3 topics.</p>
+<ol>
+<li>
+<p>Letting Go of Commented Code
+If any commented code exists in the code, if often times is better to remove it.
+Shold we have an urge to want to view the commented code at a later point, Steven suggests that we instead use the Git history to find the commented code. Also if we have the code because we think we will refactor or implement af better version of it in the future, then he suggests to instead delete it and implement the feature / method / whatever whenever that time comes since the expected design and output most likely have changed at that point.</p>
+</li>
+<li>
+<p>DRY (Don&rsquo;t repeat yourself)
+A concept stating that instead of having the same or nearly same code written multiple places in the code, you wanna abstract it out, e.g. move it to a function and instead call it from multiple places. It’s essential to consider whether abstraction actually simplifies your code or adds unnecessary complexity.</p>
+</li>
+<li>
+<p>Simplify code
+Where I work right now, we use Test Driven Development (TDD), where we write a failing test, implement the code so the test passes and <em>then</em> we refactor (often times simplify the code) - the last part oftentimes also results in deletion of unnecessary lines.</p>
+</li>
+</ol>
+<p>Steven emphasises that simplification and deletion should be done while modifying code for other purposes, making it easier to integrate with ongoing development work.</p>
+<p>After the talk he runs a Q&amp;A, where one asks &ldquo;Do you think the long code is necessary for short code?&rdquo; where Steven answers that when something is created from scratch it is natural to create a mess. I&rsquo;ve read somewhere else that you deliver the best code for that particular time, but experience and more knowledge, new features, etc introduces reasons for changing / refactoring the code.</p>
+<p>Trying too hard to keep up with best practices from the beginning can result in &lsquo;premature prooning&rsquo;.</p>
+<blockquote>
+<p>Also Steven states that even though he enjoys deleting code, there is no need to urge deleting code that already works perfectly if that holds the team back from developing on other features.</p>
+</blockquote>
+
+			</div>
+
+			<div class="tags">
+				
+					
+				
+			</div>
+
+			
+		</div>
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2024  © Copyright notice |  </div>
+	</nav>
+</div><script>feather.replace()</script>
+</body>
+</html>

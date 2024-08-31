@@ -2,67 +2,74 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Ramtin Asef</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>http://localhost:64305/posts/</link>
     <description>Recent content in Posts on Ramtin Asef</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Tue, 27 Feb 2024 20:40:57 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Aug 2024 18:45:33 +0200</lastBuildDate>
+    <atom:link href="http://localhost:64305/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deleting Code</title>
+      <link>http://localhost:64305/posts/deleting-code/</link>
+      <pubDate>Sun, 18 Aug 2024 18:45:33 +0200</pubDate>
+      <guid>http://localhost:64305/posts/deleting-code/</guid>
+      <description>I recently saw a youtube video of Steven Hazels talk from the Nerd Nite Austin #160 where he talked about deleting code and why it is important.&#xA;In his 18 minute talk he drops a few tactics on how to get it done.&#xA;I&amp;rsquo;ll simplify it by dividing it into 3 topics.&#xA;Letting Go of Commented Code If any commented code exists in the code, if often times is better to remove it.</description>
+    </item>
     <item>
       <title>Embracing Leadership: Navigating the Fear of Losing Technical Skills</title>
-      <link>http://localhost:1313/posts/embracing-leadership-navigating-the-fear-of-losing-technical-skills/</link>
+      <link>http://localhost:64305/posts/embracing-leadership-navigating-the-fear-of-losing-technical-skills/</link>
       <pubDate>Tue, 27 Feb 2024 20:40:57 +0100</pubDate>
-      <guid>http://localhost:1313/posts/embracing-leadership-navigating-the-fear-of-losing-technical-skills/</guid>
+      <guid>http://localhost:64305/posts/embracing-leadership-navigating-the-fear-of-losing-technical-skills/</guid>
       <description>Many of us in the tech industry have a deep-rooted passion for coding, problem-solving, and staying at the cutting edge of technology. So, when the opportunity arises to step into a leadership role, it&amp;rsquo;s natural to feel a twinge of apprehension. One common concern – which I also had - is the fear of losing touch with technical skills while focusing on managerial responsibilities. However, it&amp;rsquo;s crucial to recognize that this fear may be unfounded.</description>
     </item>
     <item>
       <title>Unit Testing: Is Coverage Metrics Bad</title>
-      <link>http://localhost:1313/posts/unit-testing-is-coverage-metrics-bad/</link>
+      <link>http://localhost:64305/posts/unit-testing-is-coverage-metrics-bad/</link>
       <pubDate>Thu, 22 Feb 2024 20:34:20 +0100</pubDate>
-      <guid>http://localhost:1313/posts/unit-testing-is-coverage-metrics-bad/</guid>
+      <guid>http://localhost:64305/posts/unit-testing-is-coverage-metrics-bad/</guid>
       <description>I started reading &amp;lsquo;Unit Testing&amp;rsquo; by Vladimir Khorikov and as I go through it, I would like to pick some of the topics he goes through and write them down. I believe this helps me understand the subject better.&#xA;In the first chapter, he discusses the importance of coverage metrics. Most of us have seem them and experienced a project where a specific code coverage was required.&#xA;During my studies we had a course about testing code, where we also went by different coverage metrics.</description>
     </item>
     <item>
       <title>A Case For Minimizing Context Switching</title>
-      <link>http://localhost:1313/posts/a-case-for-minimizing-context-switching/</link>
+      <link>http://localhost:64305/posts/a-case-for-minimizing-context-switching/</link>
       <pubDate>Tue, 20 Feb 2024 20:13:18 +0100</pubDate>
-      <guid>http://localhost:1313/posts/a-case-for-minimizing-context-switching/</guid>
+      <guid>http://localhost:64305/posts/a-case-for-minimizing-context-switching/</guid>
       <description>The Case You unpacked your stuff, opened the programs, got a quick overview of the daily tasks and then you start coding - hopefully you get &amp;ldquo;into the zone&amp;rdquo;. You know, the period where you are just doing things fast and well.&#xA;Suddenly a Teams-notification pops up. It&amp;rsquo;s Roger from the other team who sent you the message &amp;ldquo;Hello&amp;rdquo;. Nothing else.&#xA;Well, he&amp;rsquo;ll probably sent another message, so you wait. 10 seconds later, Roger hasn&amp;rsquo;t sent another message.</description>
     </item>
     <item>
       <title>Is Prompt Engineering the New Thing</title>
-      <link>http://localhost:1313/posts/is-prompt-engineering-the-new-thing/</link>
+      <link>http://localhost:64305/posts/is-prompt-engineering-the-new-thing/</link>
       <pubDate>Thu, 15 Feb 2024 13:00:18 +0100</pubDate>
-      <guid>http://localhost:1313/posts/is-prompt-engineering-the-new-thing/</guid>
+      <guid>http://localhost:64305/posts/is-prompt-engineering-the-new-thing/</guid>
       <description>I&amp;rsquo;m actually excited about this post - to see what my thoughts will be in 5 years from now. But here goes:&#xA;In the ever-evolving landscape of artificial intelligence (AI), LLM, buzzwords and trends come and go with remarkable speed. One such trend that has captured the attention of tech enthusiasts and AI aficionados is the concept of &amp;ldquo;prompt engineering.&amp;rdquo; It&amp;rsquo;s been hailed as a game-changer, a career path, a revolution in fine-tuning AI models, and even dubbed the secret sauce behind creative AI outputs.</description>
     </item>
     <item>
       <title>Mentorship: The Why</title>
-      <link>http://localhost:1313/posts/mentorship-the-why/</link>
+      <link>http://localhost:64305/posts/mentorship-the-why/</link>
       <pubDate>Tue, 13 Feb 2024 11:10:50 +0100</pubDate>
-      <guid>http://localhost:1313/posts/mentorship-the-why/</guid>
+      <guid>http://localhost:64305/posts/mentorship-the-why/</guid>
       <description>Introduction Mentorship is a concept that resonates well in the professional world. It&amp;rsquo;s a valuable relationship where experienced individuals guide and support those seeking to grow in their careers.&#xA;However, have you ever considered extending the concept of mentorship beyond the workplace and into your personal life? Here, we explore the idea of having multiple mentors in various aspects of your life and why it can be a game-changer.&#xA;The Power of Workplace Mentors In the corporate world, mentorship is often seen as a vital part of career development.</description>
     </item>
     <item>
       <title>What Is Hugo</title>
-      <link>http://localhost:1313/posts/what-is-hugo/</link>
+      <link>http://localhost:64305/posts/what-is-hugo/</link>
       <pubDate>Thu, 08 Feb 2024 22:10:56 +0100</pubDate>
-      <guid>http://localhost:1313/posts/what-is-hugo/</guid>
+      <guid>http://localhost:64305/posts/what-is-hugo/</guid>
       <description>Hugo is simple, easy to work with, and fast.&#xA;It&amp;rsquo;s an open-source static site generator allowing content written in plain text files (markup files) into fully functional websites.&#xA;There are a ton of good tutorials online on how to get started and as mentioned in this post Follow Up On First Post.&#xA;The Hugo documentation is very straightforward.&#xA;Once you&amp;rsquo;ve setup your initial Hugo site, you&amp;rsquo;ll notice that the structure is quite simple.</description>
     </item>
     <item>
       <title>Follow Up On First Post</title>
-      <link>http://localhost:1313/posts/follow-up-on-first-post/</link>
+      <link>http://localhost:64305/posts/follow-up-on-first-post/</link>
       <pubDate>Tue, 06 Feb 2024 20:05:49 +0100</pubDate>
-      <guid>http://localhost:1313/posts/follow-up-on-first-post/</guid>
+      <guid>http://localhost:64305/posts/follow-up-on-first-post/</guid>
       <description>So recently, I uploaded my first post with the title &amp;lsquo;My First Post.&amp;rsquo; Not only that, I had my static site running, had a repository backing it up and a ci/cd setup up.&#xA;All in all, it took me only approximately 45 minutes, following a 30-minute YouTube tutorial on how to set up my own static site using:&#xA;Github Repository GitHub Pages Hugo Git There are tons of tutorials on YouTube.</description>
     </item>
     <item>
       <title>My First Post</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
+      <link>http://localhost:64305/posts/my-first-post/</link>
       <pubDate>Fri, 02 Feb 2024 21:20:32 +0100</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <guid>http://localhost:64305/posts/my-first-post/</guid>
       <description>This is my first post. More will come.</description>
     </item>
   </channel>
