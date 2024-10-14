@@ -7,14 +7,21 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sun, 13 Oct 2024 18:45:33 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 14 Oct 2024 18:45:33 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Continous Delivery Chapter One</title>
-      <link>http://localhost:1313/posts/continous-delivery-chapter-one/</link>
+      <title>Continous Delivery: Chapter One, part two</title>
+      <link>http://localhost:1313/posts/continous-delivery-chapter-one-part-two/</link>
+      <pubDate>Mon, 14 Oct 2024 18:45:33 +0200</pubDate>
+      <guid>http://localhost:1313/posts/continous-delivery-chapter-one-part-two/</guid>
+      <description>This is part two of Chapter 1 from the book Continous Delivery by David Farley and Jez Humble.&#xA;In the previous post I went through the anti-patterns described in Chapter 1.&#xA;Here I&amp;rsquo;ll briefly go through some of the other take aways from the same chapter.&#xA;So anti patterns have been mentioned, but how do we actually achieve the goal of delivering useful, working software asap to the users?&#xA;The authors emphasizes that there needs to be a focus on quality, but also speed.</description>
+    </item>
+    <item>
+      <title>Continous Delivery: Chapter One, part one</title>
+      <link>http://localhost:1313/posts/continous-delivery-chapter-one-part-one/</link>
       <pubDate>Sun, 13 Oct 2024 18:45:33 +0200</pubDate>
-      <guid>http://localhost:1313/posts/continous-delivery-chapter-one/</guid>
-      <description>I&amp;rsquo;ve started reading Continous Delivery by Jez Humble and David Farley (aka Dave Farley). And a way for me to better remember things I dive into is to write them down. This forces me to have an at least minimum understanding of what I&amp;rsquo;ve done or else I won&amp;rsquo;t be able to write it properly down.&#xA;But why that book? The why is always important. In this case a good colleague of mine had recommended the book.</description>
+      <guid>http://localhost:1313/posts/continous-delivery-chapter-one-part-one/</guid>
+      <description>I&amp;rsquo;ve started reading Continous Delivery by Jez Humble and David Farley (aka Dave Farley). And a way for me to better remember the things I dive into is to write them down. This forces me to have at least a minimum understanding of what I&amp;rsquo;ve done, or else I won’t be able to write it down properly.&#xA;But why that book? The &amp;ldquo;why&amp;rdquo; is always important. In this case a good colleague of mine had recommended the book.</description>
     </item>
     <item>
       <title>Checking for null in C#</title>
