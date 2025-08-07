@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Dependency injection lifetimes - Ramtin Asef</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	
+  <meta itemprop="name" content="Dependency injection lifetimes">
+  <meta itemprop="description" content="Context So I am on my paternity leave and it’s driving me nuts. I need to work with code, write, learn, something.
+Everywhere I keep reading that you need to master the basics. It’s the same in Jiu Jitsu. Master the basics and you get a very long way.
+I am by no means any where near master of any basics, so why not just start with different subjects. Randomly. But subjects I find interesting.">
+  <meta itemprop="datePublished" content="2025-08-07T09:13:18+01:00">
+  <meta itemprop="dateModified" content="2025-08-07T09:13:18+01:00">
+  <meta itemprop="wordCount" content="679"><meta property="og:url" content="http://localhost:1313/posts/dependency-injection-lifetimes/">
+  <meta property="og:site_name" content="Ramtin Asef">
+  <meta property="og:title" content="Dependency injection lifetimes">
+  <meta property="og:description" content="Context So I am on my paternity leave and it’s driving me nuts. I need to work with code, write, learn, something.
+Everywhere I keep reading that you need to master the basics. It’s the same in Jiu Jitsu. Master the basics and you get a very long way.
+I am by no means any where near master of any basics, so why not just start with different subjects. Randomly. But subjects I find interesting.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-08-07T09:13:18+01:00">
+    <meta property="article:modified_time" content="2025-08-07T09:13:18+01:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Dependency injection lifetimes">
+  <meta name="twitter:description" content="Context So I am on my paternity leave and it’s driving me nuts. I need to work with code, write, learn, something.
+Everywhere I keep reading that you need to master the basics. It’s the same in Jiu Jitsu. Master the basics and you get a very long way.
+I am by no means any where near master of any basics, so why not just start with different subjects. Randomly. But subjects I find interesting.">
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="http://localhost:1313/css/dark.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script src="http://localhost:1313/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+		<div class="avatar">
+			<a href="http://localhost:1313/">
+				<img src="https://image.freepik.com/free-vector/young-man-head-with-beard-avatar-character_24877-36786.jpg" alt="Ramtin Asef" />
+			</a>
+		</div>
+	
+	<h1 class="site-title"><a href="http://localhost:1313/">Ramtin Asef</a></h1>
+	<div class="site-description"><p>I am not an expert</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://www.linkedin.com/in/ramtinasef" title="LinkedIn"><i data-feather="linkedin"></i></a></li><li><a href="#" class="scheme-toggle" id="scheme-toggle"></a></li></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">07</span>
+							<span class="rest">Aug 2025</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">Dependency injection lifetimes</h1>
+				</div>
+			</div>
+					
+			<div class="markdown">
+				<h3 id="context">Context</h3>
+<p>So I am on my paternity leave and it&rsquo;s driving me nuts. I need to work with code, write, learn, something.</p>
+<p>Everywhere I keep reading that you need to master the basics. It&rsquo;s the same in Jiu Jitsu. Master the basics and you get a very long way.</p>
+<p>I am by no means any where near master of any basics, so why not just start with different subjects. Randomly. But subjects I find interesting. And by coinsidence I stumpled across Dependency Injection (DI) lifetimes and thought to my self, why not study it? And not just read about it?
+Not just read about it, but try - when possible - to demo it and then hopefully understand it better. Because the concept is quite easy to understand - even for me, but being able to demo it via code, I believe brings the understanding further. So here we go.</p>
+<h3 id="singleton-trancient-scoped">Singleton, Trancient, Scoped</h3>
+<p>What are they and what is the difference between them?</p>
+<p>In .NET when we dependency inject services, we need to decide the lifetime of it.</p>
+<p>Do we create a new instance for each HTTP request, do we create a new instance for each object created in the HTTP request or is there only one service instance throughout the entire lifetime?</p>
+<p>That&rsquo;s basically how the 3 dependency injection lifetimes are used.</p>
+<p>As mentioned - instead of just explaining it in text, it sometimes makes better sense to demo the difference using code, so I&rsquo;ve created an experimental console application in Visual Studio to try and visualize the differences between the 3 lifetimes.</p>
+<p>In my <code>Program.cs</code>, I set up a simple console app using the built-in .NET Generic Host. Here’s what happens:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cs" data-lang="cs"><span style="display:flex;"><span><span style="color:#00f">using</span> Experiment;
+</span></span><span style="display:flex;"><span><span style="color:#00f">using</span> Microsoft.Extensions.DependencyInjection;
+</span></span><span style="display:flex;"><span><span style="color:#00f">using</span> Microsoft.Extensions.Hosting;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">using</span> IHost host = Host.CreateDefaultBuilder(args)
+</span></span><span style="display:flex;"><span>    .ConfigureServices(services =&gt;
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        services.AddSingleton&lt;ISingletonService, SingletonService&gt;();
+</span></span><span style="display:flex;"><span>        services.AddTransient&lt;ITransientService, TransientService&gt;();
+</span></span><span style="display:flex;"><span>        services.AddScoped&lt;IScopedService, ScopedService&gt;();
+</span></span><span style="display:flex;"><span>    }).Build();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>TestLifetimes(<span style="color:#a31515">&#34;Scope 1&#34;</span>);
+</span></span><span style="display:flex;"><span>TestLifetimes(<span style="color:#a31515">&#34;Scope 2&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">void</span> TestLifetimes(<span style="color:#2b91af">string</span> scopeName)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    Console.WriteLine(<span style="color:#a31515">$&#34;\n--- {scopeName} ---&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">using</span> var scope = host.Services.CreateScope();
+</span></span><span style="display:flex;"><span>    <span style="color:#2b91af">var</span> services = scope.ServiceProvider;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#2b91af">var</span> singleton = services.GetRequiredService&lt;ISingletonService&gt;();
+</span></span><span style="display:flex;"><span>    <span style="color:#2b91af">var</span> transient1 = services.GetRequiredService&lt;ITransientService&gt;();
+</span></span><span style="display:flex;"><span>    <span style="color:#2b91af">var</span> transient2 = services.GetRequiredService&lt;ITransientService&gt;();
+</span></span><span style="display:flex;"><span>    <span style="color:#2b91af">var</span> scoped1 = services.GetRequiredService&lt;IScopedService&gt;();
+</span></span><span style="display:flex;"><span>    <span style="color:#2b91af">var</span> scoped2 = services.GetRequiredService&lt;IScopedService&gt;();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    singleton.Run();
+</span></span><span style="display:flex;"><span>    transient1.Run();
+</span></span><span style="display:flex;"><span>    transient2.Run();
+</span></span><span style="display:flex;"><span>    scoped1.Run();
+</span></span><span style="display:flex;"><span>    scoped2.Run();
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>What this does:
+The host builds the service container with 3 services registered:</p>
+<p>SingletonService as singleton</p>
+<p>TransientService as transient</p>
+<p>ScopedService as scoped</p>
+<p>Then, it calls TestLifetimes twice — simulating two separate scopes (think of scopes like “requests” or units of work).</p>
+<p>Inside TestLifetimes:</p>
+<p>A new scope is created using CreateScope().</p>
+<p>The services are resolved from the scope’s ServiceProvider.</p>
+<p>Each service’s Run() method logs its own unique Guid.</p>
+<p>Let&rsquo;s look at the service implementation. They are basically all the same, just different class names:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cs" data-lang="cs"><span style="display:flex;"><span><span style="color:#00f">internal</span> <span style="color:#00f">class</span> <span style="color:#2b91af">SingletonService</span> : ISingletonService
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">readonly</span> ILogger _logger;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">readonly</span> Guid _id = Guid.NewGuid();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">public</span> SingletonService(ILogger&lt;SingletonService&gt; logger)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        _logger = logger;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">public</span> <span style="color:#00f">void</span> Run()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        _logger.LogInformation(<span style="color:#a31515">&#34;Singleton &#34;</span> + <span style="color:#a31515">&#34;GUID: &#34;</span> + _id);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>The interface contains a simple Run() method:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cs" data-lang="cs"><span style="display:flex;"><span><span style="color:#00f">namespace</span> Experiment
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">internal</span> <span style="color:#00f">interface</span> <span style="color:#2b91af">ISingletonService</span>
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">void</span> Run();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="so-what-do-they-do">So what do they do?</h3>
+<p>Each service creates a new Guid when constructed.</p>
+<p>Because of DI lifetimes:</p>
+<p>The SingletonService instance is created once for the entire app — so the _id stays the same forever.</p>
+<p>The TransientService gets a new instance every time it’s requested, so every GetRequiredService<!-- raw HTML omitted -->() call returns a new GUID.</p>
+<p>The ScopedService gets a new instance once per scope, so within a scope, repeated requests get the same _id, but different scopes get different ones.</p>
+<p>The output:</p>
+<p><img src="/images/dependency-injection-lifetime-output.png" alt=""></p>
+<p>Or in text:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>--- Scope 1 ---
+</span></span><span style="display:flex;"><span>info: Experiment.SingletonService[0]
+</span></span><span style="display:flex;"><span>      Singleton GUID: f48df15a-8eeb-438e-b8b9-2034ab693591
+</span></span><span style="display:flex;"><span>info: Experiment.TransientService[0]
+</span></span><span style="display:flex;"><span>      Transient GUID: e988b94f-2e16-41e4-9705-522567e81ed4
+</span></span><span style="display:flex;"><span>info: Experiment.TransientService[0]
+</span></span><span style="display:flex;"><span>      Transient GUID: 912c8533-54c1-4fba-82da-7a8018f4e264
+</span></span><span style="display:flex;"><span>info: Experiment.ScopedService[0]
+</span></span><span style="display:flex;"><span>      Scoped GUID: 6409c5c6-182d-487d-8870-68f715d72258
+</span></span><span style="display:flex;"><span>info: Experiment.ScopedService[0]
+</span></span><span style="display:flex;"><span>      Scoped GUID: 6409c5c6-182d-487d-8870-68f715d72258
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>--- Scope 2 ---
+</span></span><span style="display:flex;"><span>info: Experiment.SingletonService[0]
+</span></span><span style="display:flex;"><span>      Singleton GUID: f48df15a-8eeb-438e-b8b9-2034ab693591
+</span></span><span style="display:flex;"><span>info: Experiment.TransientService[0]
+</span></span><span style="display:flex;"><span>      Transient GUID: 21f2eca8-c387-4997-89a2-97d97eebd72f
+</span></span><span style="display:flex;"><span>info: Experiment.TransientService[0]
+</span></span><span style="display:flex;"><span>      Transient GUID: 4d0632dd-f7ca-48a1-a176-7d7af509da65
+</span></span><span style="display:flex;"><span>info: Experiment.ScopedService[0]
+</span></span><span style="display:flex;"><span>      Scoped GUID: 0df87ed6-e37f-4e3d-992f-d99e0451256f
+</span></span><span style="display:flex;"><span>info: Experiment.ScopedService[0]
+</span></span><span style="display:flex;"><span>      Scoped GUID: 0df87ed6-e37f-4e3d-992f-d99e0451256f
+</span></span></code></pre></div><p>What we see is that the singleton has the same GUID across scopes. The transient creates a new GUID for each time while the scoped has the same GUID within the scope, but has a new GUID when a new scope is created.</p>
+<p>That&rsquo;s it. Very simple way to demonstrate the differences.</p>
+
+			</div>
+
+			<div class="tags">
+				
+					
+				
+			</div>
+
+			
+		</div>
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2025  © Copyright notice |  </div>
+	</nav>
+</div><script>feather.replace()</script>
+</body>
+</html>

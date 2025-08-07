@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sun, 20 Oct 2024 18:45:33 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 07 Aug 2025 09:13:18 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dependency injection lifetimes</title>
+      <link>http://localhost:1313/posts/dependency-injection-lifetimes/</link>
+      <pubDate>Thu, 07 Aug 2025 09:13:18 +0100</pubDate>
+      <guid>http://localhost:1313/posts/dependency-injection-lifetimes/</guid>
+      <description>Context So I am on my paternity leave and it&amp;rsquo;s driving me nuts. I need to work with code, write, learn, something.&#xA;Everywhere I keep reading that you need to master the basics. It&amp;rsquo;s the same in Jiu Jitsu. Master the basics and you get a very long way.&#xA;I am by no means any where near master of any basics, so why not just start with different subjects. Randomly. But subjects I find interesting.</description>
+    </item>
     <item>
       <title>Leadership is not a promotion</title>
       <link>http://localhost:1313/posts/leadership-is-not-a-promotion/</link>
